@@ -1,10 +1,6 @@
 package leetcode
 package p1
 
-/**
-  * = Two Sum =
-  * @see See [[https://leetcode.com/problems/two-sum/]]
-  */
 object Solution1 {
   @annotation.tailrec
   def find(nums: Array[Int], i: Int, j: Int, t: Int): Array[Int] =
