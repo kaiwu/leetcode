@@ -26,11 +26,11 @@ package object p23 {
     *
     */
   @annotation.tailrec
-  def reverse(ls: ListNode,p: ListNode = null): ListNode =
+  def reverse(ls: ListNode, p: ListNode = null): ListNode =
     if (ls != null) {
       val n = ls.next
       ls.next = p
-      reverse(n,ls)
+      reverse(n, ls)
     } else p
 
   /**
