@@ -9,16 +9,17 @@ object Solution1 {
   }
 
   @annotation.tailrec
-  def next(ls: Array[ListNode],n: ListNode): ListNode = {
+  def next(ls: Array[ListNode], n: ListNode): ListNode = {
     val i = smallest(ls)
-    if (ls(i) == null) n
+    if (ls.isEmpty || ls(i) == null) n
     else {
       val node = ls(i)
       ls(i) = node.next
-      node.next = n
-      next(ls,node)
+      val nn = new ListNode(node.x)
+      nn.next = n
+      next(ls, nn)
     }
   }
 
-  def mergeKLists(lists: Array[ListNode]): ListNode = reverse(next(lists,null))
+  def mergeKLists(lists: Array[ListNode]): ListNode = reverse(next(lists, null))
 }
