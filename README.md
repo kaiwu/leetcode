@@ -8,7 +8,8 @@ meanwhile far too much underrated. Second let's just admit one `cannot`
 judge the engineering calibers of another in one hour technical interview,
 I personally have had and failed a few and I want to do something to alleviate
 this madness of the industry. Use `Search` from the [scaladoc](https://kaiwu.github.io/leetcode/)
-and type in some method names to get the point ...
+(or in [China](https://www.darkanchor.com/leetcode/index.html)) and type in
+some method names to get the point ...
 
 The listed solutions are by no means complete or optimal, if you would
 agree the causes, and feel like to contribute solutions, fixes or scaladocs
