@@ -4,7 +4,7 @@
   *
   * First it is to help boost language [[http://scala-lang.org Scala]] and
   * its functional approach to solve problems, Scala is expressive, succinct
-  * meanwhile far too much underrated.Second let's just admit one ''cannot''
+  * meanwhile far too much underrated. Second let's just admit one ''cannot''
   * judge the engineering calibers of another in one hour technical interview,
   * I personally have had and failed a few and I want to do something to alleviate
   * this madness of the industry. Use ''Search'' above and type in some method names
