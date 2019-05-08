@@ -21,5 +21,5 @@ object Solution1 {
     }
   }
 
-  def mergeKLists(lists: Array[ListNode]): ListNode = reverse(next(lists, null))
+  def mergeKLists(lists: Array[ListNode]): ListNode = next(lists, null).reverse
 }

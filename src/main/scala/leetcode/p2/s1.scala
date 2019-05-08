@@ -26,7 +26,6 @@ object Solution1 {
       x.next = nextNode(n1.next, n2.next, a)
       x
     }
-
   }
 
   def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = nextNode(l1, l2, 0)
