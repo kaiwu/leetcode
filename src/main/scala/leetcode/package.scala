@@ -12,7 +12,7 @@
   *
   * The listed solutions are by no means complete or optimal, if you would
   * agree the causes, and feel like to contribute solutions, fixes or scaladocs
-  * to better illustrate everything, all [[https://github.com/kaiwu/leetcode PRs]]
+  * to better illustrate everything, all [[https://github.com/kaiwu/leetcode/pulls PRs]]
   * are welcome !
   *
   */
@@ -69,7 +69,36 @@ package object leetcode {
     import ListNode._
     def `===`(ln: ListNode): Boolean = isEqual(n, ln)
     override def toString(): String = show(n)
-    def reverse : ListNode = ListNode.reverse(n)
+    def reverse: ListNode = ListNode.reverse(n)
   }
 
+  class TreeNode(var _value: Int) {
+    var value: Int = _value
+    var left: TreeNode = null
+    var right: TreeNode = null
+  }
+
+  object TreeNode {
+    def add(ns: Array[TreeNode], x: Int): TreeNode = {
+      val s = ns.length
+      if (s == 0) null
+      else if (ns(x) == null) add(ns, x + 1)
+      else {
+        val l = x * 2 + 1
+        val r = x * 2 + 2
+        ns(x).left = if (l < s) ns(l) else null
+        ns(x).right = if (r < s) ns(r) else null
+        if (l >= s) ns(0)
+        else add(ns, x + 1)
+      }
+    }
+
+    def apply(ls: List[Any]): TreeNode = {
+      val ns = ls.map {
+        case i if i == null => null
+        case i if i != null => new TreeNode(i.asInstanceOf[Int])
+      }.toArray
+      add(ns, 0)
+    }
+  }
 }
