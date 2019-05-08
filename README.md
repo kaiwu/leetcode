@@ -1,4 +1,4 @@
-= Leetcode Solutions in Scala =
+# Leetcode Solutions in Scala #
 
 This project was created with a few purposes
 
@@ -7,8 +7,8 @@ its functional approach to solve problems, Scala is expressive, succinct
 meanwhile far too much underrated.Second let's just admit one `cannot`
 judge the engineering calibers of another in one hour technical interview,
 I personally have had and failed a few and I want to do something to alleviate
-this madness of the industry. Use `Search` above and type in some method names
-to get the point ...
+this madness of the industry. Use `Search` from the [scaladoc]() and type in
+some method names to get the point ...
 
 The listed solutions are by no means complete or optimal, if you would
 agree the causes, and feel like to contribute solutions, fixes or scaladocs
