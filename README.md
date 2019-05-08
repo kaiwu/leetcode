@@ -13,5 +13,5 @@ some method names to get the point ...
 
 The listed solutions are by no means complete or optimal, if you would
 agree the causes, and feel like to contribute solutions, fixes or scaladocs
-to better illustrate everything, all [PRs](https://github.com/kaiwu/leetcode PRs)
+to better illustrate everything, all [PRs](https://github.com/kaiwu/leetcode/pulls)
 are welcome !
