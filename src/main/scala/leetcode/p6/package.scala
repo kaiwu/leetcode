@@ -7,7 +7,7 @@ import Tags._
   * @see [[https://leetcode.com/problems/zigzag-conversion/ leetcode]]
   */
 package object p6 {
-  trait p6
+  trait ZigZag_Conversion
       extends Medium
       with Amazon
       with Google

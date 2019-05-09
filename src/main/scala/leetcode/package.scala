@@ -65,7 +65,7 @@ package object leetcode {
       } else p
   }
 
-  implicit class ListNodeSyntax(n: ListNode) {
+  implicit class ListNodeOps(n: ListNode) {
     import ListNode._
     def `===`(ln: ListNode): Boolean = isEqual(n, ln)
     override def toString(): String = show(n)

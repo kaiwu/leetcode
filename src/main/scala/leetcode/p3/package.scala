@@ -10,7 +10,7 @@ import Tags._
   * @see [[p992 Subarrays with K Different Integers]]
   */
 package object p3 {
-  trait p3
+  trait Longest_Substring_Without_Repeating_Characters
       extends Medium
       with Google
       with Amazon

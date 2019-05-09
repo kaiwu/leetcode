@@ -13,7 +13,7 @@ import Tags._
   * @see [[p989 Add to Array-Form of Integer]]
   */
 package object p2 {
-  trait p2
+  trait Add_Two_Numbers
       extends Medium
       with Amazon
       with Adobe

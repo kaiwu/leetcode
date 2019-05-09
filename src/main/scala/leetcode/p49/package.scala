@@ -9,7 +9,7 @@ import Tags._
   * @see [[p249 Group Shifted Strings]]
   */
 package object p49 {
-  trait p49
+  trait Group_Anagrams
       extends Medium
       with Amazon
       with Uber

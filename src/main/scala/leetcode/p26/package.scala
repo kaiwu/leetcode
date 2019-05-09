@@ -9,7 +9,7 @@ import Tags._
   * @see [[p80 Remove Duplicates from Sorted Array II]]
   */
 package object p26 {
-  trait p26
+  trait Remove_Duplicates_From_Sorted_Array
       extends Easy
       with Facebook
       with Google

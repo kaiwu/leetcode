@@ -10,7 +10,7 @@ import Tags._
   * @see [[p283 Move Zeroes]]
   */
 package object p27 {
-  trait p27
+  trait Remove_Element
       extends Easy
       with Amazon
       with Google

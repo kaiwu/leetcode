@@ -13,7 +13,7 @@ import Tags._
   * @see [[p653 Two Sum IV - Input is a BST]]
   */
 package object p1 {
-  trait p1
+  trait Two_Sum
       extends Easy
       with Google
       with Amazon

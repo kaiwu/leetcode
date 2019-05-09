@@ -9,7 +9,7 @@ import Tags._
   * @see [[p264 Ugly Number II]]
   */
 package object p23 {
-  trait p23
+  trait Merge_k_Sorted_Lists
       extends Hard
       with Amazon
       with Facebook

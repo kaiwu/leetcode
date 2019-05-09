@@ -7,7 +7,7 @@ import Tags._
   * @see [[https://leetcode.com/problems/symmetric-tree/ leetcode]]
   */
 package object p101 {
-  trait p101
+  trait Symmetric_Tree
       extends Easy
       with Amazon
       with Google

@@ -7,7 +7,7 @@ import Tags._
   * @see [[https://leetcode.com/problems/rotate-image/ leetcode]]
   */
 package object p48 {
-  trait p48
+  trait Rotate_Image
       extends Medium
       with Amazon
       with Google

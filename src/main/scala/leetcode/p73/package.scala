@@ -8,5 +8,5 @@ import Tags._
   * @see [[p289 Game of Life]]
   */
 package object p73 {
-  trait p73 extends Medium with Apple with TopicArray
+  trait Set_Matrix_Zeroes extends Medium with Apple with TopicArray
 }
