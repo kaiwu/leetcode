@@ -24,7 +24,7 @@ package object p1 {
       with Yahoo
       with Uber
       with Bloomberg
-      with LinedIn
+      with LinkedIn
       with Alibaba
       with SAP
       with Tencent

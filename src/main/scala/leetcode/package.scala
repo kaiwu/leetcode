@@ -100,5 +100,50 @@ package object leetcode {
       }.toArray
       add(ns, 0)
     }
+
+    /**
+      * @note stack unsafe
+      */
+    def foldDFS[A](n: TreeNode)(f: TreeNode => A)(g: (A, A) => A): A = {
+      if (n == null) f(n)
+      else {
+        lazy val l = foldDFS(n.left)(f)(g)
+        lazy val r = foldDFS(n.right)(f)(g)
+
+        g(f(n), g(l, r)) // PostOrder Left-Right-Root
+        // g(g(f(n),l),r) // PreOrder Root-Left-Right
+        // g(l,g(f(n),r)) // InOrder  Left-Root-Right
+      }
+    }
+
+    import scala.collection.immutable.Queue
+    @annotation.tailrec
+    def flatten(
+        q: Queue[(Int, TreeNode)],
+        ls: List[(Int, TreeNode)] = Nil
+    ): List[(Int, TreeNode)] = {
+      if (q.isEmpty) ls
+      else {
+        val (n, t) = q.dequeue
+        (n._2.left, n._2.right) match {
+          case (null, null) => flatten(t, n :: ls)
+          case (l, null) if l != null =>
+            flatten(t :+ (n._1 + 1, l), n :: ls)
+          case (null, r) if r != null =>
+            flatten(t :+ (n._1 + 1, r), n :: ls)
+          case (l, r) => flatten(t :+ (n._1 + 1, l) :+ (n._1 + 1, r), n :: ls)
+        }
+      }
+    }
+
+    def foldBFS[A](
+        n: TreeNode,
+        a: A
+    )(f: (Int, TreeNode) => A)(g: (A, A) => A): A = {
+      val ns = flatten(Queue((0, n))).reverse
+      ns.foldLeft(a) {
+        case (a1, nn) => g(a1, f.tupled(nn))
+      }
+    }
   }
 }

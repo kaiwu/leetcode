@@ -18,7 +18,7 @@ object Tags {
   trait Adobe
   trait Bloomberg
   trait Uber
-  trait LinedIn
+  trait LinkedIn
   trait Yahoo
   trait Alibaba
   trait Tencent
