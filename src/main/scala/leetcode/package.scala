@@ -15,5 +15,18 @@
   * to better illustrate everything, all [[https://github.com/kaiwu/leetcode/pulls PRs]]
   * are welcome !
   *
+  * To maintain its goal please take a few notes too,
+  *
+  *  - Respect Scala [[https://www.scala-lang.org/conduct/ CoC]].
+  *  - Solutions shall pass ''all'' of their tests in leetcode, using Scala STD library only.
+  *  - Solutions need to bundle their own unit tests, this project uses [[https://github.com/lihaoyi/utest uTest]].
+  *  - Always prefer ''functional'' programming, which requires immutable data, pure functions etc,
+       and keep it to the point.
+  *  - Try to achieve performance only after doing it right, iterate above notes for clarification,
+  *    although this might defeat the original leetcode intention, one might be surprised that functional
+  *    programming can be performant too.
+  *  - Extra boilerplates are needed in package object so that [[https://kaiwu.github.io/leetcode/ Scaladoc]]
+       can better serve us.
+  *  - Last not the least, use [[https://scalameta.org/scalafmt/ Scalafmt]]
   */
 package object leetcode {}
