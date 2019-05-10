@@ -21,7 +21,9 @@
   *  - Solutions shall pass ''all'' of their tests in leetcode, using Scala STD library only.
   *  - Solutions need to bundle their own unit tests, this project uses [[https://github.com/lihaoyi/utest uTest]].
   *  - Always prefer ''functional'' programming, which requires immutable data, pure functions etc,
-       and keep it to the point.
+  *    and keep it to the point.
+  *  - Always prefer a generic solution, which captures the gist of a pattern or an algorithm, even if it implies
+  *    some tradeoffs and becomes slightly suboptimal in terms of computational or space efficiency.
   *  - Try to achieve performance only after doing it right, iterate above notes for clarification,
   *    although this might defeat the original leetcode intention, one might be surprised that functional
   *    programming can be performant too.
