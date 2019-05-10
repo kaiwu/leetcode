@@ -12,10 +12,6 @@ object Solution1 {
       .groupBy {
         case (k, ls) => k
       }
-      .toSeq
-      .sortBy {
-        case (k, ls) => k
-      }
       .map {
         case (k, ls) => (k, ls.map(_._2).flatten.toList)
       }
@@ -28,8 +24,11 @@ object Solution1 {
       else Map[Int, List[Int]](l -> List(n.value))
 
     import TreeNode._
-    foldBFS(root, m)(f)(merge).map {
-      case (k, v) => v
-    }.toList
+    import scala.collection.immutable.SortedMap
+    if (root == null) Nil
+    else
+      SortedMap(foldBFS(root, m)(f)(merge).toSeq: _*).map {
+        case (k, v) => v
+      }.toList
   }
 }

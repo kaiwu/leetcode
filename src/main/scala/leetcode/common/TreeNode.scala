@@ -8,17 +8,17 @@ class TreeNode(var _value: Int) {
 }
 
 object TreeNode {
-  def add(ns: Array[TreeNode], x: Int): TreeNode = {
+  def add(ns: Array[TreeNode], x: Int, y: Int): TreeNode = {
     val s = ns.length
     if (s == 0) null
-    else if (ns(x) == null) add(ns, x + 1)
+    else if (ns(x) == null) add(ns, x + 1, y)
     else {
-      val l = x * 2 + 1
-      val r = x * 2 + 2
+      val l = y * 2 + 1
+      val r = y * 2 + 2
       ns(x).left = if (l < s) ns(l) else null
       ns(x).right = if (r < s) ns(r) else null
       if (l >= s) ns(0)
-      else add(ns, x + 1)
+      else add(ns, x + 1, y + 1)
     }
   }
 
@@ -27,7 +27,7 @@ object TreeNode {
       case i if i == null => null
       case i if i != null => new TreeNode(i.asInstanceOf[Int])
     }.toArray
-    add(ns, 0)
+    add(ns, 0, 0)
   }
 
   /**
@@ -54,14 +54,12 @@ object TreeNode {
     if (q.isEmpty) ls
     else {
       val (n, t) = q.dequeue
-      (n._2.left, n._2.right) match {
-        case (null, null) => flatten(t, n :: ls)
-        case (l, null) if l != null =>
-          flatten(t :+ (n._1 + 1, l), n :: ls)
-        case (null, r) if r != null =>
-          flatten(t :+ (n._1 + 1, r), n :: ls)
-        case (l, r) => flatten(t :+ (n._1 + 1, l) :+ (n._1 + 1, r), n :: ls)
-      }
+      if (n._2 == null) flatten(t, n :: ls)
+      else
+        (n._2.left, n._2.right) match {
+          case (null, null) => flatten(t, n :: ls)
+          case (l, r)       => flatten(t :+ (n._1 + 1, l) :+ (n._1 + 1, r), n :: ls)
+        }
     }
   }
 
