@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/kaiwu/leetcode.svg?token=ZwFSe1TRqKYsKzkMHMxQ&branch=master)](https://travis-ci.com/kaiwu/leetcode)
+
 # Leetcode Solutions in Scala #
 
 This project was created with a few purposes
