@@ -1,6 +1,8 @@
 package leetcode
 package p23
 
+import leetcode.common.ListNode
+
 object Solution1 {
   def smallest(ls: Array[ListNode]): Int = {
     val lls = ls.zipWithIndex.filter { case (n, i) => n != null }

@@ -1,6 +1,8 @@
 package leetcode
 package p2
 
+import leetcode.common.ListNode
+
 object Solution1 {
   def add(x: Int, y: Int, z: Int): (Int, Int) =
     if (x + y + z >= 10) (1, x + y + z - 10)

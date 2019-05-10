@@ -1,6 +1,8 @@
 package leetcode
 package p101
 
+import leetcode.common.TreeNode
+
 object Solution1 {
   def isMirror(t1: TreeNode, t2: TreeNode): Boolean = (t1, t2) match {
     case (null, null)           => true

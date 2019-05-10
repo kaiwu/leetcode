@@ -2,6 +2,7 @@ package leetcode
 package p101
 
 import utest._
+import leetcode.common.TreeNode
 
 object p101Test extends TestSuite {
   val tests = Tests {

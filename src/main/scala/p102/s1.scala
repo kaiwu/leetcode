@@ -1,7 +1,7 @@
 package leetcode
 package p102
 
-import TreeNode._
+import leetcode.common.TreeNode
 
 object Solution1 {
   def merge(
@@ -27,6 +27,7 @@ object Solution1 {
       if (n == null) Map.empty[Int, List[Int]]
       else Map[Int, List[Int]](l -> List(n.value))
 
+    import TreeNode._
     foldBFS(root, m)(f)(merge).map {
       case (k, v) => v
     }.toList

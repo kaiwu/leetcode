@@ -2,7 +2,7 @@ package leetcode
 package p2
 
 import utest._
-import ListNode._
+import leetcode.common.ListNode
 
 object p2Test extends TestSuite {
   val tests = Tests {
