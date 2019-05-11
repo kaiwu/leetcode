@@ -10,7 +10,7 @@ import Tags._
   * @see [[p206 Reverese Linked List]]
   */
 package object p234 {
-  trait Palindrome_Linked_List 
+  trait Palindrome_Linked_List
       extends Easy
       with Amazon
       with Microsoft

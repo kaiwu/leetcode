@@ -9,7 +9,7 @@ import Tags._
   * @see [[p65 Valid Number]]
   */
 package object p8 {
-  trait  String_to_Integer_Atoi
+  trait String_to_Integer_Atoi
       extends Easy
       with Amazon
       with Microsoft
