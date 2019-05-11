@@ -2,7 +2,7 @@ package leetcode
 
 import Tags._
 
-/** = String to Integer Atoi=
+/** =String to Integer Atoi=
   *
   * @see [[https://leetcode.com/problems/string-to-integer-atoi/ leetcode]]
   * @see [[p7 Reverse Integer]]
