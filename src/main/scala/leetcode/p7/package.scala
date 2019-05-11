@@ -5,7 +5,7 @@ import Tags._
 /** =Reverse Integer=
   *
   * @see [[https://leetcode.com/problems/reverse-integer/ leetcode]]
-  * @see [[p8 String to Integer (atoi)]]
+  * @see [[p8 String to Integer Atoi]]
   * @see [[p190 Reverse Bits]]
   */
 package object p7 {
