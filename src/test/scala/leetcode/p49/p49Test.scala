@@ -2,6 +2,7 @@ package leetcode
 package p49
 
 import utest._
+import leetcode.common.ListList._
 
 object p49Test extends TestSuite {
   val tests = Tests {
@@ -9,7 +10,7 @@ object p49Test extends TestSuite {
       val a1 = Array("eat", "tea", "tan", "ate", "nat", "bat")
       val a2 =
         List(List("ate", "eat", "tea"), List("nat", "tan"), List("bat"))
-      assert(isEqual(Solution1.groupAnagrams(a1),a2))
+      assert(isEqual(Solution1.groupAnagrams(a1), a2))
     }
   }
 }

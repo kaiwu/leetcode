@@ -4,7 +4,7 @@
 
 This project was created with a few purposes
 
-First it is to help boost language [Scala](http://scala-lang.org) and
+First it is to promote language [Scala](http://scala-lang.org) and
 its functional approach to solve problems, Scala is expressive, succinct
 meanwhile far too much underrated. Second let's just admit one `cannot`
 judge the engineering calibers of another in one hour technical interview,
@@ -21,7 +21,7 @@ are welcome !
 To maintain its goal please take a few notes too,
 
 - Respect Scala [CoC](https://www.scala-lang.org/conduct/).
-- Solutions shall pass *all* of their tests in leetcode, using Scala STD library only.
+- Solutions shall pass *all* of their tests in leetcode, using plain Scala and its std library only.
 - Solutions need to bundle their own unit tests, this project uses [uTest](https://github.com/lihaoyi/utest).
 - Always prefer `functional programming`, which requires immutable data, pure functions etc,
   and keep it to the point.
