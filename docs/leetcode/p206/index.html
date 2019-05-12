@@ -1,0 +1,746 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../lib/index.js"></script>
+      <script type="text/javascript" src="../../index.js"></script>
+      <script type="text/javascript" src="../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.leetcode" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="leetcode"></a><a id="leetcode:leetcode"></a>
+      <span class="permalink">
+      <a href="index.html#leetcode" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This project was created with a few purposes" href="../index.html"><span class="name">leetcode</span></a>
+      </span>
+      
+      <p class="shortcomment cmt">This project was created with a few purposes</p><div class="fullcomment"><div class="comment cmt"><h3>Leetcode Solutions in Scala</h3><p>This project was created with a few purposes</p><p>First it is to promote language <a href="http://scala-lang.org" target="_blank">Scala</a> and
+its functional approach to solve problems, Scala is expressive, succinct
+meanwhile far too much underrated. Second let's just admit one <i>cannot</i>
+judge the engineering calibers of another in one hour technical interview,
+I personally have had and failed a few and I want to do something to alleviate
+this madness of the industry. Use <i>Search</i> above and type in some method names
+to get the point ...</p><p>The listed solutions are by no means complete or optimal, if you would
+agree the causes, and feel like to contribute solutions, fixes or scaladocs
+to better illustrate everything, all <a href="https://github.com/kaiwu/leetcode/pulls" target="_blank">PRs</a>
+are welcome !</p><p>To maintain its goal please take a few notes too,</p><ul><li>Respect Scala <a href="https://www.scala-lang.org/conduct/" target="_blank">CoC</a>.</li><li>Solutions shall pass <i>all</i> of their tests in leetcode, using plain Scala and its std library only.</li><li>Solutions need to bundle their own unit tests, this project uses <a href="https://github.com/lihaoyi/utest" target="_blank">uTest</a>.</li><li>Always prefer <i>functional programming</i>, which requires immutable data, pure functions etc,
+   and keep it to the point.</li><li>Always prefer a generic solution, which captures the gist of a pattern or an algorithm, even if it implies
+   some tradeoffs and becomes slightly suboptimal in terms of computational or space efficiency.</li><li>Try to achieve performance only after doing it right, iterate above notes for clarification,
+   although this might defeat the original leetcode intention, one might be surprised that functional
+   programming can be performant too.</li><li>Extra boilerplates are needed in package object so that <a href="https://kaiwu.github.io/leetcode/" target="_blank">Scaladoc</a>
+   can better serve us.</li><li>Last not the least, use <a href="https://scalameta.org/scalafmt/" target="_blank">Scalafmt</a>
+</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="leetcode.common" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="common"></a><a id="common:common"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#common" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../common/index.html"><span class="name">common</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd></dl></div>
+    </li><li name="leetcode.p1" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p1"></a><a id="p1:p1"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p1" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p1/index.html"><span class="name">p1</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Two Sum</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/two-sum/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p15/index.html" class="extype" name="leetcode.p15">3Sum</a></p></span><span class="cmt"><p><span class="extype" name="p18">4Sum</span></p></span><span class="cmt"><p><span class="extype" name="p167">Two Sum II - Input array is sorted</span></p></span><span class="cmt"><p><span class="extype" name="p170">Two Sum III - Data structure design</span></p></span><span class="cmt"><p><span class="extype" name="p560">Subarray Sum Equals K</span></p></span><span class="cmt"><p><span class="extype" name="p653">Two Sum IV - Input is a BST</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p101" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p101"></a><a id="p101:p101"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p101" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p101/index.html"><span class="name">p101</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Symmetric Tree</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/symmetric-tree/" target="_blank">leetcode</a></p></span></dd></dl></div>
+    </li><li name="leetcode.p102" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p102"></a><a id="p102:p102"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p102" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p102/index.html"><span class="name">p102</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Binary Tree Level Order Traversal</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p103">Binary Tree Zigzag Level Order Traversal</span></p></span><span class="cmt"><p><span class="extype" name="p107">Binary Tree Level Order Traversal II</span></p></span><span class="cmt"><p><span class="extype" name="p111">Minimum Depth of Binary Tree</span></p></span><span class="cmt"><p><span class="extype" name="p314">Binary Tree Vertical Order Traversal</span></p></span><span class="cmt"><p><span class="extype" name="p429">Average of Levels in Binary Tree</span></p></span><span class="cmt"><p><span class="extype" name="p993">N-ary Tree Level Order Traversal</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p11" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p11"></a><a id="p11:p11"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p11" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p11/index.html"><span class="name">p11</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Container With Most Water</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/container-with-most-water/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p42">Trapping Rain Water</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p12" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p12"></a><a id="p12:p12"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p12" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p12/index.html"><span class="name">p12</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Integer to Roman</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/integer-to-roman/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p13/index.html" class="extype" name="leetcode.p13">Roman to Integer</a></p></span><span class="cmt"><p><span class="extype" name="p273">Integer to English Words</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p121" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p121"></a><a id="p121:p121"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p121" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p121/index.html"><span class="name">p121</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Best Time to Buy and Sell Stock</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p53">Maximum Subarray</span></p></span><span class="cmt"><p><span class="extype" name="p122">Best Time to Buy and Sell Stock II</span></p></span><span class="cmt"><p><span class="extype" name="p123">Best Time to Buy and Sell Stock III</span></p></span><span class="cmt"><p><span class="extype" name="p188">Best Time to Buy and Sell Stock IV</span></p></span><span class="cmt"><p><span class="extype" name="p309">Best Time to Buy and Sell Stock with Ccoldown</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p13" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p13"></a><a id="p13:p13"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p13" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p13/index.html"><span class="name">p13</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Roman to Integer</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/roman-to-integer/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p12/index.html" class="extype" name="leetcode.p12">Integer to Roman</a></p></span></dd></dl></div>
+    </li><li name="leetcode.p14" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p14"></a><a id="p14:p14"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p14" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p14/index.html"><span class="name">p14</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Longest Common Prefix</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank">leetcode</a></p></span></dd></dl></div>
+    </li><li name="leetcode.p15" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p15"></a><a id="p15:p15"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p15" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p15/index.html"><span class="name">p15</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>3Sum</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/3sum/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p1/index.html" class="extype" name="leetcode.p1">Two Sum</a></p></span><span class="cmt"><p><span class="extype" name="p16">3Sum Closest</span></p></span><span class="cmt"><p><span class="extype" name="p18">4Sum</span></p></span><span class="cmt"><p><span class="extype" name="p259">3Sum Smaller</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p2" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p2"></a><a id="p2:p2"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p2" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p2/index.html"><span class="name">p2</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Add Two Numbers</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/add-two-numbers/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p43">Multiply Strings</span></p></span><span class="cmt"><p><a href="../p67/index.html" class="extype" name="leetcode.p67">Add Binary</a></p></span><span class="cmt"><p><span class="extype" name="p371">Sum of Two Integers</span></p></span><span class="cmt"><p><span class="extype" name="p415">Add Strings</span></p></span><span class="cmt"><p><span class="extype" name="p445">Add Two Numbers II</span></p></span><span class="cmt"><p><span class="extype" name="p989">Add to Array-Form of Integer</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p206" visbl="pub" class="indented2 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p206"></a><a id="p206:p206"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p206" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">p206</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Reverse Linked List</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p92">Reverse Linked List II</span></p></span><span class="cmt"><p><span class="extype" name="p156">Binary Tree Upside Down</span></p></span><span class="cmt"><p><a href="../p234/index.html" class="extype" name="leetcode.p234">Palindrome Linked List</a></p></span></dd></dl></div>
+    </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="package$$Reverse_Linked_List.html" title=""></a>
+                        <a href="package$$Reverse_Linked_List.html" title="">Reverse_Linked_List</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="Solution1$.html" title=""></a>
+                        <a href="Solution1$.html" title="">Solution1</a>
+                      </li><li name="leetcode.p23" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p23"></a><a id="p23:p23"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p23" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p23/index.html"><span class="name">p23</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Merge k Sorted Lists</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/merge-k-sorted-lists/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p21">Merge Two Sorted Lists</span></p></span><span class="cmt"><p><span class="extype" name="p264">Ugly Number II</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p234" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p234"></a><a id="p234:p234"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p234" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p234/index.html"><span class="name">p234</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Palindrome Linked List</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/palindrome-linked-list/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p9/index.html" class="extype" name="leetcode.p9">Palindrome Number</a></p></span><span class="cmt"><p><span class="extype" name="p125">Valid Palindrome</span></p></span><span class="cmt"><p><a href="" class="extype" name="leetcode.p206">Reverese Linked List</a></p></span></dd></dl></div>
+    </li><li name="leetcode.p242" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p242"></a><a id="p242:p242"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p242" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p242/index.html"><span class="name">p242</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Valid Anagram</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/valid-anagram/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p49/index.html" class="extype" name="leetcode.p49">Group Anagrams</a></p></span><span class="cmt"><p><span class="extype" name="p266">Palindrome Permutation</span></p></span><span class="cmt"><p><span class="extype" name="p438">Find All Anagrams in a String</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p26" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p26"></a><a id="p26:p26"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p26" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p26/index.html"><span class="name">p26</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Remove Duplicates from Sorted Array</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p27/index.html" class="extype" name="leetcode.p27">Remove Element</a></p></span><span class="cmt"><p><span class="extype" name="p80">Remove Duplicates from Sorted Array II</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p27" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p27"></a><a id="p27:p27"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p27" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p27/index.html"><span class="name">p27</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Remove Element</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/remove-element/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p26/index.html" class="extype" name="leetcode.p26">Remove Duplicates from Sorted Array</a></p></span><span class="cmt"><p><span class="extype" name="p203">Remove Linked List Elements</span></p></span><span class="cmt"><p><span class="extype" name="p283">Move Zeroes</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p3" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p3"></a><a id="p3:p3"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p3" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p3/index.html"><span class="name">p3</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Longest Substring Without Repeating Characters</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p159">Longest Substring with At Most Two Distinct Characters</span></p></span><span class="cmt"><p><span class="extype" name="p340">Longest Substring with At Most K Distinct Characters</span></p></span><span class="cmt"><p><span class="extype" name="p992">Subarrays with K Different Integers</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p48" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p48"></a><a id="p48:p48"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p48" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p48/index.html"><span class="name">p48</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Rotate Image</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/rotate-image/" target="_blank">leetcode</a></p></span></dd></dl></div>
+    </li><li name="leetcode.p49" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p49"></a><a id="p49:p49"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p49" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p49/index.html"><span class="name">p49</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Group Anagrams</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/group-anagrams/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p242/index.html" class="extype" name="leetcode.p242">Valid Anagram</a></p></span><span class="cmt"><p><span class="extype" name="p249">Group Shifted Strings</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p5" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p5"></a><a id="p5:p5"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p5" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p5/index.html"><span class="name">p5</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Longest Palindromic Substring</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/longest_palindromic_substring/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p214">Shortest Palindrome</span></p></span><span class="cmt"><p><span class="extype" name="p266">Palindrome Permutation</span></p></span><span class="cmt"><p><span class="extype" name="p336">Palindrome Pairs</span></p></span><span class="cmt"><p><span class="extype" name="p516">Longest Palindromic Subsequence</span></p></span><span class="cmt"><p><span class="extype" name="p647">Palindromic Substrings</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p58" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p58"></a><a id="p58:p58"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p58" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p58/index.html"><span class="name">p58</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Length of Last Word</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/length-of-last-word/" target="_blank">leetcode</a></p></span></dd></dl></div>
+    </li><li name="leetcode.p6" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p6"></a><a id="p6:p6"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p6" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p6/index.html"><span class="name">p6</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>ZigZag Conversion</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/zigzag-conversion/" target="_blank">leetcode</a></p></span></dd></dl></div>
+    </li><li name="leetcode.p66" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p66"></a><a id="p66:p66"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p66" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p66/index.html"><span class="name">p66</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Plus One</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/plus-one/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p43">Multiply Strings</span></p></span><span class="cmt"><p><a href="../p67/index.html" class="extype" name="leetcode.p67">Add Binary</a></p></span><span class="cmt"><p><span class="extype" name="p369">Plus One Linked List</span></p></span><span class="cmt"><p><span class="extype" name="p989">Add to Array-Form of Integer</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p67" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p67"></a><a id="p67:p67"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p67" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p67/index.html"><span class="name">p67</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Add Binary</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/add-binary/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p2/index.html" class="extype" name="leetcode.p2">Add Two Numbers</a></p></span><span class="cmt"><p><span class="extype" name="p43">Multiply Strings</span></p></span><span class="cmt"><p><a href="../p66/index.html" class="extype" name="leetcode.p66">Plus One</a></p></span><span class="cmt"><p><span class="extype" name="p989">Add to Array-Form of Integer</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p7" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p7"></a><a id="p7:p7"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p7" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p7/index.html"><span class="name">p7</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Reverse Integer</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/reverse-integer/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p8/index.html" class="extype" name="leetcode.p8">String to Integer Atoi</a></p></span><span class="cmt"><p><span class="extype" name="p190">Reverse Bits</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p73" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p73"></a><a id="p73:p73"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p73" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p73/index.html"><span class="name">p73</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Set Matrix Zeroes</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/set-matrix-zeroes/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p289">Game of Life</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p78" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p78"></a><a id="p78:p78"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p78" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p78/index.html"><span class="name">p78</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Subsets</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/subsets/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p90">Subsets II</span></p></span><span class="cmt"><p><span class="extype" name="p320">Generalized Abbreviation</span></p></span><span class="cmt"><p><span class="extype" name="p784">Letter Case Permutation</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p8" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p8"></a><a id="p8:p8"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p8" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p8/index.html"><span class="name">p8</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>String to Integer Atoi</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/string-to-integer-atoi/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p7/index.html" class="extype" name="leetcode.p7">Reverse Integer</a></p></span><span class="cmt"><p><span class="extype" name="p65">Valid Number</span></p></span></dd></dl></div>
+    </li><li name="leetcode.p9" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p9"></a><a id="p9:p9"></a>
+      <span class="permalink">
+      <a href="../leetcode/index.html#p9" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../p9/index.html"><span class="name">p9</span></a>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><h3>Palindrome Number</h3></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="leetcode">leetcode</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/palindrome-number/" target="_blank">leetcode</a></p></span><span class="cmt"><p><a href="../p234/index.html" class="extype" name="leetcode.p234">Palindrome Linked List</a></p></span></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../index.html" class="extype" name="leetcode">leetcode</a></p>
+        <h1>p206<span class="permalink">
+      <a href="../../leetcode/p206/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">p206</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><h3>Reverse Linked List</h3></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">leetcode</a></p></span><span class="cmt"><p><span class="extype" name="p92">Reverse Linked List II</span></p></span><span class="cmt"><p><span class="extype" name="p156">Binary Tree Upside Down</span></p></span><span class="cmt"><p><a href="../p234/index.html" class="extype" name="leetcode.p234">Palindrome Linked List</a></p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="leetcode.p206"><span>p206</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="leetcode.p206.Reverse_Linked_List" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Reverse_Linked_ListextendsTags.EasywithTags.AmazonwithTags.MicrosoftwithTags.ApplewithTags.YandexwithTags.FacebookwithTags.GooglewithTags.AdobewithTags.YahoowithTags.BloombergwithTags.JPMorganwithTags.TopicLinkedList"></a><a id="Reverse_Linked_List:Reverse_Linked_List"></a>
+      <span class="permalink">
+      <a href="../../leetcode/p206/index.html#Reverse_Linked_ListextendsTags.EasywithTags.AmazonwithTags.MicrosoftwithTags.ApplewithTags.YandexwithTags.FacebookwithTags.GooglewithTags.AdobewithTags.YahoowithTags.BloombergwithTags.JPMorganwithTags.TopicLinkedList" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="package$$Reverse_Linked_List.html"><span class="name">Reverse_Linked_List</span></a><span class="result"> extends <a href="../Tags$$Easy.html" class="extype" name="leetcode.Tags.Easy">Easy</a> with <a href="../Tags$$Amazon.html" class="extype" name="leetcode.Tags.Amazon">Amazon</a> with <a href="../Tags$$Microsoft.html" class="extype" name="leetcode.Tags.Microsoft">Microsoft</a> with <a href="../Tags$$Apple.html" class="extype" name="leetcode.Tags.Apple">Apple</a> with <a href="../Tags$$Yandex.html" class="extype" name="leetcode.Tags.Yandex">Yandex</a> with <a href="../Tags$$Facebook.html" class="extype" name="leetcode.Tags.Facebook">Facebook</a> with <a href="../Tags$$Google.html" class="extype" name="leetcode.Tags.Google">Google</a> with <a href="../Tags$$Adobe.html" class="extype" name="leetcode.Tags.Adobe">Adobe</a> with <a href="../Tags$$Yahoo.html" class="extype" name="leetcode.Tags.Yahoo">Yahoo</a> with <a href="../Tags$$Bloomberg.html" class="extype" name="leetcode.Tags.Bloomberg">Bloomberg</a> with <a href="../Tags$$JPMorgan.html" class="extype" name="leetcode.Tags.JPMorgan">JPMorgan</a> with <a href="../Tags$$TopicLinkedList.html" class="extype" name="leetcode.Tags.TopicLinkedList">TopicLinkedList</a></span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="leetcode.p206.Solution1" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Solution1"></a><a id="Solution1:Solution1"></a>
+      <span class="permalink">
+      <a href="../../leetcode/p206/index.html#Solution1" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Solution1$.html"><span class="name">Solution1</span></a>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
