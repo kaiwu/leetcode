@@ -7,7 +7,7 @@ import Tags._
   * @see [[https://leetcode.com/problems/longest-common-prefix/ leetcode]]
   */
 package object p14 {
-  trait Longest_Common_Prefix 
+  trait Longest_Common_Prefix
       extends Easy
       with Amazon
       with Adobe

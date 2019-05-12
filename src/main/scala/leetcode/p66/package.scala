@@ -19,4 +19,3 @@ package object p66 {
       with Uber
       with TopicArray
 }
-
