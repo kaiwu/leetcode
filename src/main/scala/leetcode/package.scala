@@ -18,7 +18,7 @@
   * To maintain its goal please take a few notes too,
   *
   *  - Respect Scala [[https://www.scala-lang.org/conduct/ CoC]].
-  *  - Solutions shall pass ''all'' of their tests in leetcode, using plain Scala its std library only.
+  *  - Solutions shall pass ''all'' of their tests in leetcode, using plain Scala and its std library only.
   *  - Solutions need to bundle their own unit tests, this project uses [[https://github.com/lihaoyi/utest uTest]].
   *  - Always prefer ''functional programming'', which requires immutable data, pure functions etc,
   *    and keep it to the point.
