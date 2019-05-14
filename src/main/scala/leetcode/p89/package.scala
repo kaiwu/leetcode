@@ -8,8 +8,5 @@ import Tags._
   * @see [[p717 1-bit and 2-bits Characters]
   */
 package object p89 {
-  trait GrayCode
-      extends Medium
-      with Google
-      with TopicBacktracking
+  trait Gray_Code extends Medium with Google with TopicBacktracking
 }
