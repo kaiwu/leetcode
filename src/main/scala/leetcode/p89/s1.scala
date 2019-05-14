@@ -11,8 +11,7 @@ object Solution1 {
   def toList(n: Int): List[List[Int]] = n match {
     case 0 => List(List(0))
     case 1 => List(List(0), List(1))
-    case 2 => List(List(0, 0), List(0, 1), List(1, 1), List(1, 0))
-    case n if n > 2 => {
+    case n if n > 1 => {
       val ls = toList(n - 1)
       ls.map(l => 0 :: l) ++ ls.reverse.map(l => 1 :: l)
     }
